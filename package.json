@@ -1,0 +1,28 @@
+{
+  "name": "app-team",
+  "version": "1.0.0",
+  "description": "test workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhnvg/slack-test.git"
+  },
+  "author": "Anh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhnvg/slack-test/issues"
+  },
+  "homepage": "https://github.com/anhnvg/slack-test#readme",
+    "devDependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@octokit/core": "^4.2.0",
+    "@slack/webhook": "^6.1.0",
+    "@vercel/ncc": "^0.36.1",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4"
+  }
+}
