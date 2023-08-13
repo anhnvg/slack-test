@@ -1,0 +1,14 @@
+name: Send Slack Message
+on:
+  workflow_dispatch:
+
+jobs:
+  sendSlack:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
+    steps:
+      - uses: actions/checkout@v3
+      - name: send slack a Message
+        run: |
+          bash Scripts/slack-notification.sh
